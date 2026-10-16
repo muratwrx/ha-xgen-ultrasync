@@ -1,0 +1,10 @@
+set_bypass:
+  target:
+    entity:
+      integration: xgen_alarm
+      domain: binary_sensor
+  fields:
+    bypass:
+      required: true
+      selector:
+        boolean:

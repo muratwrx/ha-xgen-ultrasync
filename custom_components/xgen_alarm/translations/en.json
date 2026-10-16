@@ -1,0 +1,52 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "xGen alarm panel",
+        "description": "The panel's web address and a panel user that may arm and disarm.",
+        "data": {
+          "host": "Host",
+          "username": "User name",
+          "pin": "PIN"
+        }
+      },
+      "reauth_confirm": {
+        "title": "Log in to the alarm panel again",
+        "data": {
+          "username": "User name",
+          "pin": "PIN"
+        }
+      },
+      "reconfigure": {
+        "title": "Change the alarm panel login",
+        "data": {
+          "host": "Host",
+          "username": "User name",
+          "pin": "PIN"
+        }
+      }
+    },
+    "error": {
+      "cannot_connect": "Could not reach the panel.",
+      "invalid_auth": "The panel rejected the user name or PIN.",
+      "no_areas": "This user has no areas it may control."
+    },
+    "abort": {
+      "already_configured": "This panel is already set up.",
+      "reauth_successful": "Logged in again.",
+      "reconfigure_successful": "Login updated."
+    }
+  },
+  "services": {
+    "set_bypass": {
+      "name": "Set zone bypass",
+      "description": "Bypass a zone so it is ignored while armed, or remove the bypass.",
+      "fields": {
+        "bypass": {
+          "name": "Bypass",
+          "description": "On to bypass the zone, off to remove the bypass."
+        }
+      }
+    }
+  }
+}
